@@ -18,8 +18,13 @@ A web-based tool to execute Laravel Artisan commands directly from your browser,
 
 ## 📸 Screenshot
 
+### Command Runner
 ![Command Runner Screenshot](./public/screenshots/laravel-web-based-artisan-command-executor-2.png)  
 *Run Artisan commands directly from your browser with a clean and intuitive interface.*
+
+### Homepage
+![Homepage Screenshot](./public/screenshots/laravel-web-based-artisan-command-executor.png)  
+*Welcome to the Laravel Web Artisan Panel with an overview of features and quick access to the Command Runner.*
 
 ## 📋 Prerequisites
 
