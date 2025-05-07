@@ -1,6 +1,36 @@
 @extends('layouts.app')
 
+@section('title', 'Home - Laravel Web Artisan Tool')
+
 @section('content')
+
+@push('styles')  
+    <style>
+        .hero-bg {
+            background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+        .btn-primary {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        .feature-icon {
+            font-size: 1.5rem;
+            color: #10b981;
+        }
+        .bg-pattern {
+            background-image: radial-gradient(circle, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        footer {
+            background: linear-gradient(180deg, #1f2937 0%, #111827 100%);
+        }
+    </style>
+@endpush
+
 <div class="hero-bg text-white py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 class="text-4xl sm:text-6xl font-extrabold mb-4 tracking-tight animate-fade-in">Laravel Web Based Artisan Command Executor 💻</h1>
@@ -42,8 +72,8 @@
             <p class="text-gray-700 mb-4">Crafted with passion by <span class="font-medium text-indigo-600">Vivek Chandra Pandey (Vicky)</span>, a full-stack developer from Uttarakhand 🇮🇳.</p>
             <p class="text-gray-700 mb-6">Fueled by a drive for clean code and innovative solutions, Vicky builds tools to supercharge developer productivity across the web.</p>
             <div class="flex flex-col sm:flex-row sm:space-x-4 space-y-3 sm:space-y-0">
-                <a href="https://bytewebster.com" class="btn-primary inline-block bg-indigo-600 text-white font-semibold px-6 py-3 rounded-full shadow-md hover:bg-indigo-700 transition duration-150 text-center">Discover My Projects</a>
-                <a href="https://github.com/vickypandey14" class="btn-primary inline-block bg-gray-800 text-white font-semibold px-6 py-3 rounded-full shadow-md hover:bg-gray-900 transition duration-150 text-center">View My GitHub</a>
+                <a href="https://bytewebster.com" target="_blank" class="btn-primary inline-block bg-indigo-600 text-white font-semibold px-6 py-3 rounded-full shadow-md hover:bg-indigo-700 transition duration-150 text-center">Visit My Blog Website</a>
+                <a href="https://github.com/vickypandey14" target="_blank" class="btn-primary inline-block bg-gray-800 text-white font-semibold px-6 py-3 rounded-full shadow-md hover:bg-gray-900 transition duration-150 text-center">View My GitHub</a>
             </div>
         </div>
     </div>

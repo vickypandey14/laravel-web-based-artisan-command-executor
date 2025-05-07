@@ -8,22 +8,39 @@ use Illuminate\Http\Request;
 
 class CommandRunnerController extends Controller
 {
-    public function index()
+    public function indexCommandRunner()
     {
         $logs = CommandLog::latest()->take(10)->get();
 
         $commonCommands = [
-            'make:model ExampleModel -mcr',
-            'make:controller ExampleController --resource',
-            'make:middleware ExampleMiddleware',
-            'make:seeder ExampleSeeder',
-            'make:factory ExampleFactory',
+            'make:model ExampleModel -mcr',                          // Model with migration, controller, resource
+            'make:controller ExampleController --resource',          // Resource Controller
+            'make:middleware ExampleMiddleware',                     // Middleware
+            'make:seeder ExampleSeeder',                             // Seeder
+            'make:factory ExampleFactory',                           // Factory
+            'make:migration create_example_table',                   // Custom migration
+            'make:command CustomCommand',                            // Custom Artisan command
+            'migrate',                                               // Run migrations
+            'migrate:fresh --seed',                                  // Drop all tables, migrate, and seed
+            'db:seed --class=ExampleSeeder',                         // Seed specific seeder
+            'route:list',                                            // Show all routes
+            'cache:clear',                                           // Clear application cache
+            'config:cache',                                          // Rebuild config cache
+            'view:clear',                                            // Clear compiled views
+            'optimize:clear',                                        // Clear various caches
+            'storage:link',                                          // Create symbolic link for storage
+            'queue:work',                                            // Start queue worker
+            'make:policy ExamplePolicy --model=ExampleModel',        // Create policy for a model
+            'make:request ExampleRequest',                           // Form request class
+            'make:event ExampleEvent',                               // Event class
+            'make:listener ExampleListener --event=ExampleEvent',    // Listener for an event
+            'make:job ExampleJob',                                   // Queue job
         ];
 
         return view('command-runner.index', compact('logs', 'commonCommands'));
     }
 
-    public function run(Request $request)
+    public function runCommandRunner(Request $request)
     {
         $request->validate([
             'command' => 'required|string'
@@ -43,5 +60,11 @@ class CommandRunnerController extends Controller
         }
 
         return redirect()->route('command-runner.index')->with('output', $output);
+    }
+
+    public function clearHistory(Request $request)
+    {
+        \App\Models\CommandLog::truncate();
+        return response()->json(['message' => 'History cleared successfully']);
     }
 }

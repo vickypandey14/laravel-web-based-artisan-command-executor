@@ -3,33 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laravel Web Artisan Tool</title>
+    <title>@yield('title')</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <style>
-        /* Custom CSS for enhanced UI */
-        .hero-bg {
-            background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
-            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-        }
-        .btn-primary {
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-        }
-        .feature-icon {
-            font-size: 1.5rem;
-            color: #10b981;
-        }
-        .bg-pattern {
-            background-image: radial-gradient(circle, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
-            background-size: 20px 20px;
-        }
-        footer {
-            background: linear-gradient(180deg, #1f2937 0%, #111827 100%);
-        }
-    </style>
+    @stack('styles')
+    
 </head>
 <body class="bg-gray-50 font-sans antialiased bg-pattern">
     <nav class="bg-gradient-to-r from-indigo-600 to-purple-600 shadow-lg sticky top-0 z-50">
@@ -58,5 +35,7 @@
             </div>
         </div>
     </footer>
+
+    @stack('scripts')
 </body>
 </html>
