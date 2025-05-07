@@ -69,8 +69,8 @@
 
         <div class="bg-white rounded-2xl shadow-xl p-8 transform hover:scale-105 transition duration-300">
             <h2 class="text-3xl font-bold text-gray-900 mb-6">Meet the Creator</h2>
-            <p class="text-gray-700 mb-4">Crafted with passion by <span class="font-medium text-indigo-600">Vivek Chandra Pandey (Vicky)</span>, a full-stack developer from India.</p>
-            <p class="text-gray-700 mb-6">Fueled by a drive for clean code and innovative solutions, Vicky builds tools to supercharge developer productivity across the web.</p>
+            <p class="text-gray-700 mb-4">Built with passion by a backend developer from India who loves building useful web tools.</p>
+            <p class="text-gray-700 mb-6">Focused on writing clean code and solving real-world problems to make the web more powerful for everyone.</p>
             <div class="flex flex-col sm:flex-row sm:space-x-4 space-y-3 sm:space-y-0">
                 <a href="https://bytewebster.com" target="_blank" class="btn-primary inline-block bg-indigo-600 text-white font-semibold px-6 py-3 rounded-full shadow-md hover:bg-indigo-700 transition duration-150 text-center">Visit My Blog Website</a>
                 <a href="https://github.com/vickypandey14" target="_blank" class="btn-primary inline-block bg-gray-800 text-white font-semibold px-6 py-3 rounded-full shadow-md hover:bg-gray-900 transition duration-150 text-center">View My GitHub</a>
