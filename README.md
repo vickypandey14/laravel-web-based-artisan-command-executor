@@ -61,7 +61,7 @@ A web-based tool to execute Laravel Artisan commands directly from your browser,
 4. **Configure Database**:
    - Update your `.env` file with your MySQL database credentials:
      ```
-     DB_CONNECTIONmysql
+     DB_CONNECTION=mysql
      DB_HOST=127.0.0.1
      DB_PORT=3306
      DB_DATABASE=command_executor
