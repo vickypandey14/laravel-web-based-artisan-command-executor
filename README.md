@@ -1,8 +1,10 @@
 # Laravel Web Based Artisan Command Executor
 
-![Laravel Web Artisan Panel](https://img.shields.io/badge/Laravel-12.x-red)  
-![PHP](https://img.shields.io/badge/PHP-%5E8.2-blue)  
-![License](https://img.shields.io/badge/license-MIT-green)
+<p align="center">
+  <img src="https://img.shields.io/badge/Laravel-12.x-red" alt="Laravel">
+  <img src="https://img.shields.io/badge/PHP-%5E8.2-blue" alt="PHP">
+  <img src="https://img.shields.io/badge/license-MIT-green" alt="License">
+</p>
 
 A web-based tool to execute Laravel Artisan commands directly from your browser, eliminating the need for SSH or terminal access. Built with Laravel 12, Tailwind CSS (via CDN), and jQuery, this project offers a user-friendly interface for developers to streamline their workflow.
 
@@ -59,7 +61,7 @@ A web-based tool to execute Laravel Artisan commands directly from your browser,
 4. **Configure Database**:
    - Update your `.env` file with your MySQL database credentials:
      ```
-     DB_CONNECTIONmysql
+     DB_CONNECTION=mysql
      DB_HOST=127.0.0.1
      DB_PORT=3306
      DB_DATABASE=command_executor
