@@ -33,7 +33,7 @@
 
 <div class="hero-bg text-white py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h1 class="text-4xl sm:text-6xl font-extrabold mb-4 tracking-tight animate-fade-in">Laravel Web Based Artisan Command Executor 💻</h1>
+        <h1 class="text-4xl sm:text-6xl font-extrabold mb-4 tracking-tight animate-fade-in">Laravel Web Based Artisan Command Executor</h1>
         <p class="text-lg sm:text-xl max-w-3xl mx-auto mb-8 opacity-90">Effortlessly execute Laravel artisan commands from your browser—no SSH or terminal required.</p>
         <a href="{{ route('command-runner.index') }}" class="btn-primary inline-block bg-white text-indigo-600 font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-gray-100 transition duration-150">Launch Command Runner</a>
     </div>
