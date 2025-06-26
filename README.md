@@ -6,7 +6,7 @@
   <img src="https://img.shields.io/badge/license-MIT-green" alt="License">
 </p>
 
-A web-based tool to execute Laravel Artisan commands directly from your browser, eliminating the need for SSH or terminal access. Built with Laravel 12, Tailwind CSS (via CDN), and jQuery, this project offers a user-friendly interface for developers to streamline their workflow.
+A tool to execute Laravel Artisan commands directly from your browser, eliminating the need for SSH or terminal access. Built with Laravel 12, Tailwind CSS (via CDN), and jQuery, this project offers a user-friendly interface for developers to streamline their workflow. It is particularly helpful for sites hosted on shared web hosting without SSH access, enabling seamless use of Laravel Artisan command features.
 
 ## 🚀 Features
 
